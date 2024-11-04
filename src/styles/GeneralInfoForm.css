@@ -1,14 +1,20 @@
 .generalInfo{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+
+    .generalInfoHeading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     form{
         display: flex;
         flex-direction: column;
         gap: 5px;
 
-        input{
+        input, textarea{
             border: none;
             background-color: #8080804f;
             border-radius: 5px;
