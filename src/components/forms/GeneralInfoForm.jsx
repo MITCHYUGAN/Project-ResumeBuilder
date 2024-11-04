@@ -1,6 +1,4 @@
 /* eslint-disable react/prop-types */
-import '../../styles/GeneralInfoForm.css'
-
 const GeneralInfoForm = ({ generalInfo, setGeneralInfo }) => {
 
   return (
