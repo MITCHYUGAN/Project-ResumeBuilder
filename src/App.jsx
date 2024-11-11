@@ -8,6 +8,7 @@ import Experience from "./components/resume/Experience"
 import "./styles/Forms.css"
 import "./styles/Resume.css"
 import { useState } from 'react'
+import ExperienceForm from './components/forms/ExperienceForm'
 
 function App() {
 
@@ -18,19 +19,40 @@ function App() {
     email: '',
     social: "",
     phoneNo: ""
-  })  
+  })
+
+
+  const [education, setEducation] = useState([
+    {
+      school: "",
+      degree: "",
+      startDate: "",
+      endDate: ""
+    }
+  ])
+
+  const [experience, setExperience] = useState([
+    {
+      companyName: "",
+      position: "",
+      responsibilities : "",
+      startDate: "",
+      endDate: ""
+    }
+  ])
 
   return (
     <main className='main'>
       <div className="forms">
         <GeneralInfoForm generalInfo={generalInfo} setGeneralInfo={setGeneralInfo} />
-        <EducationForm />
+        <EducationForm education={education} setEducation={setEducation} />
+        <ExperienceForm experience={experience} setExperience={setExperience}/>
       </div>
       <div className="resume">
-        <GeneralInfo generalInfo={generalInfo}  />
-        <Education />
-        <Experience />
-    </div>
+        <GeneralInfo generalInfo={generalInfo} />
+        <Education education={education} />
+        <Experience experience={experience} />
+      </div>
     </main>
   )
 }
