@@ -1,78 +1,147 @@
 .resume{
     background-color: white;
-    width: 100%;
+    width: min(100%, 1000px);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: center;
-}
 
-.resumeGeneralInfo{
-    background-color: #0d1e2df7;
-    width: 100%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    justify-content: space-between;
-
-    .bio{
-        padding: 20px;
+    /* * Resume General Info Styling */
+    .resumeGeneralInfo{
+        background-color: #0d1e2df7;
+        width: 100%;
+        height: 200px;
         display: flex;
-        flex-direction: column;
-
-        h2{
-            font-size: 15px;
-            margin-bottom: 20px;
-            color: #425c73;
+        align-items: center;
+        gap: 30px;
+        justify-content: space-between;
+    
+        .bio{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+    
+            h2{
+                font-size: 15px;
+                margin-bottom: 20px;
+                color: #425c73;
+            }
+    
+            
+            p{
+                color: rgb(222, 222, 222);
+            }
         }
-
         
-        p{
-            color: rgb(222, 222, 222);
+        .socials{
+            align-self: flex-end;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+    
+            a{
+                color: #ab0808;
+            }
         }
     }
-    
-    .socials{
-        align-self: flex-end;
-        padding: 20px;
+
+    /* * Resume Education Styling */
+    .resumeEducation{
+        color: black;
+        width: 90%;
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        align-items: center;
+        
+        .resumeEducationHeading{
+            background-color: #425c73d0;
+            color: white;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
 
-        a{
-            color: #ab0808;
+        .resumeeducations{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 80%;
+
+            .resumeeducation{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+
+                .resumeeducationcentent{
+                    min-width: 400px;
+                }
+
+                h1{
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+                
+                h2{
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    /* * Resume Experience Styling */
+    .resumeExperience{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        
+        .resumeExperienceHeading{
+            color: white;
+            background-color: #425c73d0;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .resumeexperiences{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 80%;
+
+            .resumeexperience{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                
+                .resumeexperienceContent{
+                    width: min(400px, 100%);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+
+                h1{
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+                
+                h2{
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
         }
     }
 }
 
 
-.resumeEducation{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    .resumeEducationHeading{
-        background-color: #425c73;
-        text-align: center;
-        width: 100%;
-        padding: 10px;
-    }
-}
 
 
-.resumeExperience{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .resumeExperienceHeading{
-        background-color: #425c73;
-        text-align: center;
-        width: 100%;
-        padding: 10px;
-    }
-}
