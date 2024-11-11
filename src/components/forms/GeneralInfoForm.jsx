@@ -4,7 +4,7 @@ import { useState } from "react"
 const GeneralInfoForm = ({ generalInfo, setGeneralInfo }) => {
 
   const [openGeneralInfo, setopenGeneralInfo] = useState({
-    open: false,
+    open: true,
     icon: "▼"
   })
 

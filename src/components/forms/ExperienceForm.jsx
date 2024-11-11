@@ -4,7 +4,7 @@ import { useState } from "react"
 const ExperienceForm = ({ experience, setExperience }) => {
 
   const [openExperience, setOpenExperience] = useState({
-    open: true,
+    open: false,
     icon: "▼"
   })
 
